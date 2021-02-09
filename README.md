@@ -9,11 +9,11 @@
   
 2、关于JUC下的三个辅助类的如何使用
 
-  A、关于CountDownLatch
+  A、关于CountDownLatch 倒计数器
   
-  B、关于CyclicBarrier
+  B、关于CyclicBarrier 循环栅栏
   
-  C、关于Semaphore
+  C、关于Semaphore 信号量
   
   
 # 延伸阅读
