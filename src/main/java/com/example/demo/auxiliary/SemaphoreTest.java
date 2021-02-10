@@ -15,7 +15,7 @@ public class SemaphoreTest {
             String j = String.valueOf(i);
             new Thread(()->{
                 try {
-                    semaphore.acquire();
+                    semaphore.acquire();//信号量减一
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -26,7 +26,7 @@ public class SemaphoreTest {
                     e.printStackTrace();
                 }
                 System.out.println("第" + j + "辆车离开了车位");
-                semaphore.release();
+                semaphore.release();//信号量加一
             }).start();
         }
     }
